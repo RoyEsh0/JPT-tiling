@@ -4,24 +4,32 @@ export const projects = [
     title: "Bathroom renovation",
     description: "Floor-to-ceiling porcelain tiles with a walk-in shower.",
     status: "completed",
+    image: "/images/bathroom.jpg",
+    alt: "Bathroom with flower printed procelain",
   },
   {
     id: 2,
     title: "Kitchen backsplash",
     description: "Hand-cut mosaic tiles behind the stove and sink.",
     status: "completed",
+    image: "/images/kitchen.jpg",
+    alt: "Kitchen with flower printed procelain",
   },
   {
     id: 3,
     title: "Hallway floor",
     description: "Large-format stone-look tiles, starting next month.",
     status: "upcoming",
+    image: "/images/hallway.jpg",
+    alt: "Hallway with pleasant grey-white procelain",
   },
   {
     id: 4,
     title: "Swiming pool",
     description: "Large-format stone-look tiles, starting next year.",
     status: "upcoming",
-    year: 2027
+    year: 2027,
+    image: "/images/swimming-pool.jpg",
+    alt: "Hallway with pleasant grey-white procelain",
   }
 ];
