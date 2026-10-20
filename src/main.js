@@ -21,6 +21,42 @@ function createProjectCard (project){
   `;
 }
 
-projectList.innerHTML = projects.map(createProjectCard).join("");
+const filterButtons = document.querySelector("#filter-buttons");
+let currentFilter = "all";
 
-console.log(projects);
+function renderProjects () {
+  const visibleProjects = 
+    currentFilter === "all"
+    ? projects
+    : projects.filter((project) => project.status === currentFilter);
+
+  
+  projectList.innerHTML = visibleProjects.map(createProjectCard).join("");
+}
+
+function updateButtons() {
+  filterButtons.querySelectorAll("button").forEach((button) =>{
+    const isActive = button.dataset.filter === currentFilter;
+    button.classList.toggle("bg-brand", isActive);
+    button.classList.toggle("text-white", isActive);
+    button.classList.toggle("bg-white", !isActive);
+    button.classList.toggle("text-stone-700", !isActive);
+
+
+  });
+
+}
+
+filterButtons.addEventListener("click", (event) =>{
+  const button = event.target.closest("button");
+  if (!button) return;
+
+  currentFilter = button.dataset.filter;
+  renderProjects();
+  updateButtons();
+  console.log(currentFilter);
+});
+
+renderProjects()
+updateButtons()
+
