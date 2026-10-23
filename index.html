@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -42,7 +42,39 @@
       </div>
       <div id="project-list" class="mt-8 grid gap-6 md:grid-cols-3"></div>
     </section>
+    <section id="about" class="bg-white py-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="text-3xl font-bold">About Us</h2>
+        <p class="mt-4 max-w-2xl text-stone-600">
+          JPT is a tiling company in Perth Austrelia. We provide tiling services in wide range of areas such as bathroom tiling, kitchen, hallways, and swimming pools. 
+          JPT was estbalished by Jawad in 2010 and has been providing first class service to the local communities since then. Our moto is first class service and customer satisfaction. 
+          Contact us if you are need help renewing the tiling in your bathroom, kitchen, hallway, or swimming pool. 
+          We are available on Whatsapp 24/7.  
+        </p>
+      </div>
+    </section>
+    <section id="contact" class="mx-auto max-w-5xl px-4 py-16">
+      <h2 class="text-3xl font-bold">Contact</h2>
+      <p class="mt-4 text-stone-600"> Get intouch for a free evaluation</p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <a 
+        href="tel:+610000000000"
+        class="rounded bg-brand px-6 py-3 text-center font-semibold text-white hover:bg-brand/80"
+        >
+        Call us
+      </a>
+      <a 
+      href="mailto: info@jpt.com"
+      class="rounded border border-brand px-6 py-3 text-center font-semibold text-brand hover:bg-brand hover:text-white"
+      >
+      Email us
+      </a>
+      </div>
+    </section>
   </main>
+  <footer class="bg-stone-800 py-8 text-center text-sm text-stone-400">
+    <p>&copy; <span id="year"></span> JPT. All rights reserved.</p>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>

@@ -60,3 +60,5 @@ filterButtons.addEventListener("click", (event) =>{
 renderProjects()
 updateButtons()
 
+
+document.querySelector("#year").textContent = new Date().getFullYear();
