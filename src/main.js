@@ -62,3 +62,19 @@ updateButtons()
 
 
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+const menuButton = document.querySelector("#menu-button");
+const menu = document.querySelector("#menu");
+
+menuButton.addEventListener("click", () =>{
+const isOpen = !menu.classList.toggle("hidden");
+menuButton.setAttribute("aria-expanded", isOpen);
+}
+);
+
+menu.addEventListener("click", () =>{
+  if (event.target.closest("a")){
+    menu.classList.add("hidden");
+    menuButton.setAttribute("aria-expanded", false);
+  }
+});
