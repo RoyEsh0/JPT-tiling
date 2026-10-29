@@ -4,7 +4,7 @@ export const projects = [
     title: "Bathroom renovation",
     description: "Floor-to-ceiling porcelain tiles with a walk-in shower.",
     status: "completed",
-    image: "/images/bathroom.jpg",
+    image: "/images/bathroom.webp",
     alt: "Bathroom with flower printed procelain",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     title: "Kitchen backsplash",
     description: "Hand-cut mosaic tiles behind the stove and sink.",
     status: "completed",
-    image: "/images/kitchen.jpg",
+    image: "/images/kitchen.webp",
     alt: "Kitchen with flower printed procelain",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     title: "Hallway floor",
     description: "Large-format stone-look tiles, starting next month.",
     status: "upcoming",
-    image: "/images/hallway.jpg",
+    image: "/images/hallway.webp",
     alt: "Hallway with pleasant grey-white procelain",
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     description: "Large-format stone-look tiles, starting next year.",
     status: "upcoming",
     year: 2027,
-    image: "/images/swimming-pool.jpg",
+    image: "/images/swimming-pool.webp",
     alt: "Hallway with pleasant grey-white procelain",
   }
 ];
